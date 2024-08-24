@@ -35,10 +35,6 @@
 
     <sectionPart />
   </v-container>
-
-
-
-
 </template>
 
 <script setup>

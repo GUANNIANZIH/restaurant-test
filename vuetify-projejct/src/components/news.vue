@@ -13,10 +13,10 @@
         show-arrows
       >
         <v-slide-group-item
-          v-for="NewsCardComponent in NewsCardComponents"
-          :key="NewsCardComponent._id"
+          v-for="item in NewsCardComponents"
+          :key="item._id"
           >
-            <NewsCardComponent v-bind="NewsCardComponent"/>
+            <NewsCardComponent v-bind="item"/>
         </v-slide-group-item>
       </v-slide-group>
     </v-sheet>
@@ -27,7 +27,7 @@
 // 取資料要把 API 方法拉進去
 import { useApi } from '@/composables/axios.js'
 import { useSnackbar } from 'vuetify-use-dialog'
-import NewsCardComponent from '@/components/card/newsCardComponent.vue';
+import NewsCardComponent from '@/components/card/newsCard.vue';
 
 // model 變數，綁定 v-model
 const model = ref('')

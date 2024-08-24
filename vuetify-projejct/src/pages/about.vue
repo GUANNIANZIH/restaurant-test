@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="m-0 p-0 my-v-container">
-    <aboutBrand />
+    <AboutBrand />
     <BrandSection />
 
     <v-row class="my-5 mx-5 mt-5 mb-5 pa-5">
@@ -28,7 +28,7 @@
       </v-timeline>
     </v-row>
 
-    <sectionPart />
+    <SectionPart />
 
   </v-container>
 </template>
@@ -37,8 +37,8 @@
 import { ref } from 'vue'
 import { definePage } from 'unplugin-vue-router/runtime'
 import BrandSection from '@/components/brandSection.vue';
-import sectionPart from '@/components/sectionPart.vue';
-import aboutBrand from '@/components/aboutBrand.vue';
+import SectionPart from '@/components/sectionPart.vue';
+import AboutBrand from '@/components/aboutBrand.vue';
 
 const items = ref([
 {
